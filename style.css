@@ -8,8 +8,6 @@ body{
 }
 .inactiveImg{
   position: absolute;
-  width: 500px;
-  height: 500px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -24,3 +22,12 @@ body{
   20%,80%{ opacity: 1; }
   100% { opacity: 0; }
 } */
+.inactiveImg img{
+  width: 100%;
+}
+.maxWidth{
+  width: 600px;
+}
+.maxHeight{
+  height: 600px;
+}
