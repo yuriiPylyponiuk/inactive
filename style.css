@@ -13,4 +13,14 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  background-color: transparent;
+  transition: .5s;
+  /* animation-duration: 5s;
+  animation-name: identifier;
+  animation-iteration-count: infinite; */
 }
+/* @keyframes identifier {
+  0% { opacity: 0; }
+  20%,80%{ opacity: 1; }
+  100% { opacity: 0; }
+} */

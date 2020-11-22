@@ -1,5 +1,5 @@
-const TIMEINMILISECOND = 1000;
-const INTERVALTIME= 1000;
+const TIMER = 10000;
+const INTERVALTIME= 5000;
 var timeoutId, intervalId; 
 
 //Start timer and clean body if img created first
@@ -8,7 +8,7 @@ function startTimer() {
   if(a){
     a.remove()
   }
-  timeoutId = window.setTimeout(doInactive, TIMEINMILISECOND)
+  timeoutId = window.setTimeout(doInactive, TIMER)
 }
 
 //Create img and change imgs
