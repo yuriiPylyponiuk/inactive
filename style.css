@@ -13,21 +13,19 @@ body{
   background-position: center;
   background-color: transparent;
   transition: .5s;
-  /* animation-duration: 5s;
+  animation-duration: 5s;
   animation-name: identifier;
-  animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
 }
-/* @keyframes identifier {
+@keyframes identifier {
   0% { opacity: 0; }
   20%,80%{ opacity: 1; }
   100% { opacity: 0; }
-} */
-.inactiveImg img{
-  width: 100%;
 }
+
 .maxWidth{
-  width: 600px;
+  width: 500px;
 }
 .maxHeight{
-  height: 600px;
+  height: 500px;
 }
