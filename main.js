@@ -22,37 +22,37 @@ function doInactive() {
   const MINTOP = 0;
   let imgLink = `img/${randomNumber(1,7)}.jpeg`;
 
-  console.log(imgLink)
+  console.log(imgLink);
 
   positionLeft = positionLeft-600;
   positionTop = positionTop-600;
 
   div.classList.add('inactiveImg');
-  div.appendChild(img);
   div.style.left = `${randomNumber(MINLEFT,positionLeft)}px`;
   div.style.top = `${randomNumber(MINTOP,positionTop)}px`;
-  body.appendChild(div);
+  img.src= imgLink;
   
   if(img.width>600 ){
-    img.classList.add('maxWidth')
+    img.classList.add('maxWidth');
   }
   if(img.height>600){
-    img.classList.add('maxHeight')
+    img.classList.add('maxHeight');
   }
-  img.src= imgLink;
-
+  div.appendChild(img);
+  body.appendChild(div);
+  
   intervalId = setInterval(() => {
-    imgLink = `img/${randomNumber(1,7)}.jpeg`
-    img.classList.remove('maxWidth', 'maxHeight')
+    imgLink = `img/${randomNumber(1,7)}.jpeg`;
+    img.classList.remove('maxWidth', 'maxHeight');
     div.style.left = `${randomNumber(MINLEFT,positionLeft)}px`;
     div.style.top = `${randomNumber(MINTOP,positionTop)}px`;
     
 
     if(img.width>600 ){
-      img.classList.add('maxWidth')
+      img.classList.add('maxWidth');
     }
     if(img.height>600){
-      img.classList.add('maxHeight')
+      img.classList.add('maxHeight');
     }
     
     img.src= imgLink;
